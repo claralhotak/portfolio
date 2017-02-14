@@ -1,0 +1,211 @@
+/***** BASE STYLES *****/
+body {
+	font-family:;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+	
+#about, #work, #contact {
+    height: 500px;
+}
+
+
+	
+/***** GRID *****/
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    margin: 0 auto;
+    float: left;
+}
+
+.third-width {
+    width: 400px;
+    margin: 0 auto;
+    float: left;
+}
+
+
+
+/***** HEADER CSS *****/
+
+header {
+    height: 900px;
+    background: url('poppies.png');
+    background-size: cover;
+}
+header h1 { 
+    font-family: 'Cookie', cursive;
+    font-size: 60px;
+    color: #c73535;
+    padding: 20px 0;
+    text-shadow: 2px 2px 0px #d83b4c, 8px 5px 0px rgba(128, 84, 98, 0.12);
+}
+header h2 {
+    width: 1300px;
+    clear: both;
+    font-family: 'Rufina', serif;
+    font-size: 55px;
+    line-height: 80x;
+    color: #000000;
+    padding: 0px 0;
+}
+header h2 span {
+    color: #2b2b2b;
+    font-family: 'Cookie', cursive;
+}
+nav {
+    float: right; 
+    padding: 75px 40px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+	font-family: 'Rufina', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #828282;
+    padding-left: 80px; 
+}
+
+
+/***** ABOUT CSS *****/
+#about {
+	background-color: #EBEBEB;
+	}
+#about .full-width {
+    padding: 50px 0;
+}
+#about h2 {
+    font-family: 'Rufina', serif;
+    font-size: 36px;
+    color: #2b2b2b;
+}
+ 
+#about p {
+    font-family: 'Oxygen', sans-serif;
+    color: #7f7f7f;
+    font-size: 21px;
+    line-height: 40px;
+    padding-right: 50px;
+}
+
+
+/***** WORK CSS *****/
+#work {
+	background-color: #c9d0bc;
+	text-align: center;
+	}
+#work .full-width {
+    padding: 115px 0;
+} 
+#work img {
+    padding-bottom: 30px;
+}
+#work h3 {
+    font-size: 24px; 
+    font-family: 'Rufina', serif;
+    margin: 0 auto;
+    color: #262a2b;
+}
+#work p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #262a2b;
+    padding: 0 35px;
+}
+
+/***** PORTFOLIO CSS *****/
+#portfolio {
+	background-color: ##FFE4E1;
+	text-align: center;
+	}
+#portfolio .full-width {
+    padding: 115px 0;
+} 
+#portfolio img {
+    padding-bottom: 30px;
+}
+#portfolio h3 {
+    font-size: 24px; 
+    font-family: 'Rufina', serif;
+    margin: 0 auto;
+    color: #262a2b;
+}
+#portfolio p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #262a2b;
+    padding: 0 35px;
+}
+
+
+/***** CONTACT CSS *****/
+#contact {
+	background-color: #EBEBEB;
+	}
+#contact .full-width {
+    padding: 110px 0;
+}
+#contact-img {
+    border: 12px solid #ffffff;
+}
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+#envelope {
+    padding: 0 10px 0 115px;
+}
+#contact h2 {
+    font-family: 'Cookie', cursive;
+    font-size: 36px;
+    color: #c73535;
+}
+#email-header{
+    font-family: 'Rufina', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #2b2b2b;
+    margin: -30px 0 5px 0;
+}
+#socialmedia-header {
+	font-family: 'Rufina', serif;
+    font-weight: bold;
+    font-size: 29px;
+    color: #2b2b2b;
+    margin: 40px 0 0 0;
+}
+#contact a {
+	text-decoration: none;
+    font-family: 'Oxygen', sans-serif; 
+    color: #c9d0bc;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+     
+}
+#contact ul img {
+	font-size: 32px;
+    padding-right: 48px;
+}
+	
