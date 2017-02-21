@@ -1,28 +1,29 @@
 /***** BASE STYLES *****/
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	}
+	font-family: 'Oxygen', sans-serif;;
+}
 	
-#about, #work, #contact {
-    height: 600px;
+#about, #work, #portfolio, #contact {
+    height: 500px;
+    overflow: scroll;
 }
 
 
 	
 /***** GRID *****/
 .full-width {
-    width: 1200px;
-    margin: 0 auto;
+    width:  96%;
+    margin: auto;
 }
 
 .half-width {
-    width: 600px;
+    width: 50%;
     margin: 0 auto;
     float: left;
 }
 
 .third-width {
-    width: 400px;
+    width: 33%;
     margin: 0 auto;
     float: left;
 }
@@ -37,38 +38,40 @@ header {
     background-size: cover;
 }
 header h1 { 
-    font-family: 'Lobster', cursive;
-    font-size: 60px;
+    font-family: 'Cookie', cursive;
+    font-size: 80px;
     color: #c73535;
     padding: 20px 0;
+    text-shadow: 3px 3px 0px rgba(128, 84, 98, 0.12);
 }
 header h2 {
-    width: 1300px;
+    width: 92%;
     clear: both;
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 55px;
+    font-family: 'Rufina', serif;
+    font-size: 50px;
     line-height: 80x;
     color: #000000;
     padding: 0px 0;
 }
 header h2 span {
     color: #2b2b2b;
-    font-family: 'Lobster', cursive;
+    font-family: 'Cookie', cursive;
+    font-size: 65px;
 }
 nav {
     float: right; 
     padding: 75px 40px;
 }
 nav ul li{
-    display: inline-block;
+    display: inline;
 }
 nav ul li a {
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Rufina', serif;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #828282;
-    padding-left: 80px; 
+    padding-left: 70px; 
 }
 
 
@@ -77,16 +80,16 @@ nav ul li a {
 	background-color: #EBEBEB;
 	}
 #about .full-width {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 #about h2 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Rufina', serif;
     font-size: 36px;
     color: #2b2b2b;
 }
  
 #about p {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     color: #7f7f7f;
     font-size: 21px;
     line-height: 40px;
@@ -100,24 +103,50 @@ nav ul li a {
 	text-align: center;
 	}
 #work .full-width {
-    padding: 115px 0;
+    padding: 60px 0;
 } 
 #work img {
     padding-bottom: 30px;
 }
 #work h3 {
     font-size: 24px; 
-    font-family: 'Lobster', cursive;
+    font-family: 'Rufina', serif;
     margin: 0 auto;
     color: #262a2b;
 }
 #work p {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #262a2b;
     padding: 0 35px;
 }
+
+/***** PORTFOLIO CSS *****/
+#portfolio {
+	background-color: #FFE4E1;
+	text-align: center;
+	}
+#portfolio .full-width {
+    padding: 80px 0;
+}
+#portfolio h3 {
+    font-size: 24px; 
+    font-family: 'Rufina', serif;
+    margin: 0 auto;
+    color: #262a2b;
+    width: 320px;
+    padding: 10px;
+}
+
+#portfolio p {
+  font-size: 14px; 
+    font-family: 'Oxygen', sans-serif;
+    }
+
+#portfolio img {
+  border: 10px #fff solid;
+  }
 
 
 /***** CONTACT CSS *****/
@@ -125,9 +154,10 @@ nav ul li a {
 	background-color: #EBEBEB;
 	}
 #contact .full-width {
-    padding: 110px 0;
+    padding: 80px 0;
 }
 #contact-img {
+    margin-left: 50px;
     border: 12px solid #ffffff;
 }
 #contact h2, #email-header, #socialmedia-header, #contact ul {
@@ -137,19 +167,19 @@ nav ul li a {
     padding: 0 10px 0 115px;
 }
 #contact h2 {
-    font-family: 'Lobster', cursive;
-    font-size: 36px;
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
     color: #c73535;
 }
 #email-header{
-    font-family: Source Sans Pro;
+    font-family: 'Rufina', serif;
     font-weight: 400;
     font-size: 32px;
-    color: #2b2b2b;
+    color: #000;
     margin: -30px 0 5px 0;
 }
 #socialmedia-header {
-	font-family: Source Sans Pro;
+	font-family: 'Rufina', serif;
     font-weight: bold;
     font-size: 29px;
     color: #2b2b2b;
@@ -157,20 +187,30 @@ nav ul li a {
 }
 #contact a {
 	text-decoration: none;
-    font-family: Source Sans Pro; 
+    font-family: 'Oxygen', sans-serif; 
     color: #c9d0bc;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 20px;
+    margin: -30px 0 5px 0;
 }
 #contact ul {
     list-style: none;
 }
 #contact ul li {
      display: inline-block;
+     padding-right: 55px;
      
 }
 #contact ul img {
-	font-size: 32px;
-    padding-right: 48px;
+	
 }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width:768px) {
+	/* Header =========================== */
 	

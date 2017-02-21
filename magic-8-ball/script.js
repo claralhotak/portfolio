@@ -3,7 +3,7 @@ $(document).ready(function(){
   $("#answer").hide();    
     var magic8Ball = {};
     
-    magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
+    magic8Ball.listOfAnswers = ["YesYesYes", "Absolutely!", "Hmm.... well, yeah.", "Of course!", "Indubitably!", "100%!"];
 
 
     magic8Ball.askQuestion = function(question){
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 
     var onClick = function() {
-        var question = prompt("ASK A YES/NO QUESTION!");
+        var question = prompt("Type in your question! For example, should I invite Clara for an interview? Would she make a good candidate? Is she creative, thoughtful, and efficient?");
         magic8Ball.askQuestion(question);
     $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
     $("#answer").fadeIn(4000);
