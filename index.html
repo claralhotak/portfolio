@@ -1,178 +1,256 @@
-<!DOCTYPE html>
+<meta charset="utf-8">
 
-<html>
-<head>
-	<title>Clara Lhotak | Aspiring Developer</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cookie|Oxygen|Rufina" rel="stylesheet">
-	<script src="https://use.fontawesome.com/6a975be2a7.js">
-	</script>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-	<header>
-		<div class="full-width">
-			<div class="half-width">
-				<h1>Clara Lhotak</h1>
-			</div>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script type="text/javascript" src="script.js"></script>
 
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      </div>
 
-			<div class="half-width">
-				<nav>
-					<ul>
-						<li>
-							<a href="#about">About</a>
-						</li>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div> 
+<!-- container -->
+  </nav>
+    
+  <header class="jumbotron text-center" id="home">
+    <div class="container home-intro">
+      <h1>Clara Lhotak</h1>
+      <hr class="separator separator-white">
+        <h3>A developer who loves to design, and a designer who loves to develop.</h3>
+    </div>
+  </header>
+  
+  <div id="about-me" class="content-container">
+    <div class="container">
+      <div class="row text-center">
+      <img src="me.png">
+        <h2>About</h2>
+        <div class="col-md-5 col-md-offset-1">
+          <p>
+            I have used computers my whole life and taught myself to design and code websites when I was 12 years old. I never pictured myself doing that as my career, and so I pursued a psychology degree instead. I was always interested in learning more about people, so I thought it was a fitting choice. One Bachelor's Degree, two and a half years in the mental health field, and one crushed dream of graduate school later, I am looking for a change.
+          </p> 
+        </div>
+        <div class="col-md-5">
+          <p>
+            After remembering the enjoyment I used to get out of web development (and remembering I live in the Silicon Valley), I knew what direction to step in. While mental health is abstract and variant, code is concrete, perfectable, and predictable.
+          </p>
+        </div>
+     
+      </div> <!-- row -->
+       <center><h3>my skills include:</h3>
+        <p>html & css | responsive web development | javascript & jquery | design | photoshop | typography | hand lettering</p>
+        </center>
+    </div> <!-- container -->
+  </div> <!-- content section -->
+  
+  <section id="portfolio" class="content-container">
+    <div class="container">
+      <div class="row text-center">
+        <h2>portfolio</h2>
+      </div>  <!-- row end -->
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="rwd-preview.jpg">
+          <figcaption>
+            <h2>The Mountaineer</h2>
+            <p>A responsive landing page drafted mobile first.</p>
+            <a href="http://codepen.io/andrewchar/debug/dGrVJO?editors=1010" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="cactus-preview.jpg">
+          <figcaption>
+            <h2>Cactus & Script</h2>
+            <p>Drawn in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/BjqXJV/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="magic-8-ball-preview.jpg">
+          <figcaption>
+            <h2>Magic 8-Ball</h2>
+            <p>Uses Javascript to answer questions.</p>
+            <a href="https://tribute.firebaseapp.com/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- end column -->
+          </div>
+    <!-- end row -->
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="branches-preview.jpg">
+          <figcaption>
+            <h2>Branches & Script</h2>
+            <p>Drawn in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/dGrVJO?editors=1010" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="rwd-wireframe-preview.jpg">
+          <figcaption>
+            <h2>Wireframe</h2>
+            <p>Made in Photoshop CS 6 for my responsive landing page.</p>
+            <a href="http://codepen.io/andrewchar/debug/BjqXJV/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="portfolio-preview.jpg">
+          <figcaption>
+            <h2>This portfolio!</h2>
+            <p>Completely responsive and uses Bootstrap and jQuery.</p>
+            <a href="https://tribute.firebaseapp.com/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- end column -->
+        </div>
+    <!-- end row -->
+    
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="blackberry-preview.jpg">
+          <figcaption>
+            <h2>Blackberry Bath Bomb</h2>
+            <p>Part 1 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/dGrVJO?editors=1010" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="dragons-egg-preview.jpg">
+          <figcaption>
+            <h2>Dragon's Egg Bath Bomb</h2>
+            <p>Part 2 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/BjqXJV/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="experimenter-preview.jpg">
+          <figcaption>
+            <h2>Experimenter Bath Bomb</h2>
+            <p>Part 3 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="https://tribute.firebaseapp.com/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- end column -->
+    </div>
+    <!-- end row -->
+    
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="frozen-preview.jpg">
+          <figcaption>
+            <h2>Frozen Bath Bomb</h2>
+            <p>Part 4 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/dGrVJO?editors=1010" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="intergalactic-preview.jpg">
+          <figcaption>
+            <h2>Intergalactic Bath Bomb</h2>
+            <p>Part 5 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/BjqXJV/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="sakura-preview.jpg">
+          <figcaption>
+            <h2>Sakura Bath Bomb</h2>
+            <p>Part 6 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="https://tribute.firebaseapp.com/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- end column -->
+    </div>
+    <!-- end row -->
+          <div class="row">
+        <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="sex-bomb-preview.jpg">
+          <figcaption>
+            <h2>Sex Bomb</h2>
+            <p>Part 7 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/dGrVJO?editors=1010" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <figure class="effect-portfolio">
+          <img class="img-responsive" src="twilight-preview.jpg">
+          <figcaption>
+            <h2>Twilight Bath Bomb</h2>
+            <p>Part 5 of my LUSH Bath Bomb vectorization & script series. Made in Procreate for iPad.</p>
+            <a href="http://codepen.io/andrewchar/debug/BjqXJV/" target='_blank'>View more</a>
+          </figcaption>
+        </figure>
+      </div>
 
-
-						<li>
-							<a href="#work">Skills</a>
-						</li>
-
-
-						<li>
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
-
-			<h2><span>Hey.</span> I'm an aspiring developer that needs to start somewhere.</h2>
-		</div>
-	</header>
-
-
-	<main>
-		<section>
-			<div id="about">
-				<div class="full-width">
-					<h2>Introduction</h2>
-
-
-					<div class="half-width">
-						<p>I have used computers my whole life and taught myself to design and code websites when I was 12 years old. I never pictured myself doing that as my career, and so I pursued a psychology degree instead. I was always interested in learning more about people, so I thought it was a fitting choice. One Bachelor's Degree, two and a half years in the mental health field, and one crushed dream of graduate school later, I am looking for a change.</p>
-					</div>
-
-
-					<div class="half-width">
-						<p>After remembering the enjoyment I used to get out of web development (and remembering I live in the Silicon Valley), I knew what direction to step in. While mental health is abstract and variant, code is concrete, perfectable, and predictable.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section>
-			<div id="work">
-				<div class="full-width">
-					<div class="third-width">
-						<img alt="HTML icon" src="html.png">
-
-						<h3>HTML & CSS</h3>
-
-
-						<p>I have been designing and coding websites since I was 12 years old. I can provide quick, clean, and eloquent code for your website.</p>
-					</div>
-
-
-					<div class="third-width">
-						<img alt="CSS icon" src="css.png">
-
-						<h3>Design & Converting</h3>
-
-
-						<p>I have also been using various versions of Adobe Photoshop since I was 12 and am extremely familiar in its use. I can turn your vision, in the form of a PSD, into the code to make your ideal website run. I am also able to create a web page from the ground up, from the wireframe stage to logos and finishing touches.</p>
-					</div>
-
-
-					<div class="third-width">
-						<img alt="Pencil icon" src="design.png">
-
-						<h3>Javascript & jQuery</h3>
-
-
-						<p>I recently learned how to implement Javascript and jQuery to make web pages more interactive and dynamic. While still a beginner, I am willing to learn any necessary skills to further my script abilities.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<section>
-			<div id="portfolio">
-				<div class="full-width">
-					<div class="third-width">
-						<a href="/rwd/index.html"><img alt="Preview" src="rwd.jpg"></a>
-
-						<h3>Responsive website</h3>
-
-
-						<p>A fictional responsive website for camping and hiking. Drafted mobile first, this website responds beautifully to all devices.</p>
-					</div>
-
-
-					<div class="third-width">
-						<a href="/rwd-wireframe.jpg"><img alt="Preview" src="wireframe.jpg"></a>
-
-						<h3>Responsive Website Wireframe</h3>
-
-
-						<p>I created this wireframe for my responsive website in Adobe Photoshop CS6.</p>
-					</div>
-
-
-					<div class="third-width">
-						<a href="/magic-8-ball/index.html"><img alt="Preview" src="magic8ball.jpg"></a>
-
-						<h3>Javascript Magic 8-Ball</h3>
-
-
-						<p>Be sure to ask this Javascript-powered Magic 8-Ball questions about me! Hint -- there is a reoccurring theme with all its answers.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<footer>
-			<div id="contact">
-				<div class="full-width">
-					<div class="half-width"><img alt="Contact image" height="344" id="contact-img" src="contact.jpeg" width="494">
-					</div>
-
-
-					<div class="half-width" id="contact-info">
-						<h2>Willing to give me a chance?</h2>
-
-
-						<h3 id="email-header">Contact me!</h3>
-						<a href="mailto:claralhotak@yahoo.com"><i class="fa fa-envelope-open-o" id="envelope"></i>claralhotak [@] yahoo [dot] com</a>
-
-						<h3 id="socialmedia-header">Or, find me on social media.</h3>
-
-
-						<ul>
-							<li>
-								<a href="http://www.instagram.com/claralhotak/"><i class="fa fa-instagram fa-3x"></i></a>
-							</li>
-
-
-							<li>
-								<a href="http://www.facebook.com/clara.lhotak"><i class="fa fa-facebook-official fa-3x"></i></a>
-							</li>
-
-
-							<li>
-								<a href="http://github.com/claralhotak"><i class="fa fa-github fa-3x"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</main>
-</body>
-</html>
+    </div>
+    <!-- end row -->
+    
+  </div>
+  <!-- end container -->
+</section>
+<div id="contact" class="content-container">
+    <div class="container">
+      <h3 class="text-center">see you around</h3>
+        <ul class="social-media text-center">
+        <li>
+            <a href="mailto:claralhotak@yahoo.com" target="_blank" id="email"><i class="fa fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/claralhotak" target="_blank" id="instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/clara.lhotak" target="_blank" id="facebook"><i class="fa fa-facebook-official"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/claralhotak" target="_blank" id="github"><i class="fa fa-github-square"></i></a>
+          </li>
+        </ul>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div> <!-- contact id -->

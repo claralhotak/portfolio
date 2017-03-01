@@ -1,0 +1,282 @@
+/* General page styling */
+html, body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;   
+}
+
+body {
+  padding-top: 50px;
+}
+
+h1, h4, h5, h6 {
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    letter-spacing: .17em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: .07em;
+  color: #3c2834;
+  text-transform: uppercase;
+  }
+
+h3 {
+  font-size: 1em;
+  letter-spacing:;
+  color: #3c2834;}
+
+
+/* navbar pseudo style */
+
+.nav.navbar-nav.navbar-right li{
+  text-transform: uppercase;
+  }
+  
+.navbar-header .color-me:hover {
+  text-transform: uppercase;
+  color: #5d7069;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+  text-transform: uppercase;
+    color: #5d7069;
+}
+
+/* Landing page */
+#home {
+  background: transparent;
+  min-height: 100%;
+  position: relative;
+  background-position: fixed;  
+}
+
+#home:before {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url('hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background-attachment: fixed;    
+}
+
+.home-intro {
+  padding: 270px 0;
+}
+
+/* content spacing & <hr> styles */
+.content-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.separator-white {
+  border-top: solid 3px #f8f1ec;
+  color: #f8f1ec;
+}
+
+.separator {
+  max-width: 180px;
+}
+
+/* about/contact separation */
+#about-me, #contact, #portfolio {
+  background-color: #f8f1ec;
+  color: #222;
+  font-size: 1.2em;
+}
+
+#about-me img {
+ align: center;
+ width: 25%;
+ height: auto;
+ }
+
+/* portfolio styling */
+#portfolio {
+  background-color: #f8f8f8;
+  }
+
+figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 578px;
+  max-height: 398px;
+  height: auto;
+  padding-bottom: 10px;
+ }
+
+figure img {
+  position: relative;
+  display: block;
+  opacity: 0.6;
+}
+
+figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+  /*Provides positioning for the slide up of the caption*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure figcaption > a {
+  /*Hides View More Text from view in links*/
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure h2 {
+  letter-spacing: -0.05em;
+  font-weight: 300;
+}
+
+figure h2 span {
+  font-weight: 700;
+}
+
+figure h2,
+figure p {
+  margin: 0;
+}
+
+figure p {
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 68.5%;
+}
+
+figure.effect-portfolio {
+  background: #222;
+}
+
+figure.effect-portfolio img,
+figure.effect-portfolio h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.effect-portfolio img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-portfolio h2,
+figure.effect-portfolio p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+}
+
+figure.effect-portfolio p {
+  text-transform: none;
+  font-size: 67%;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+}
+
+figure.effect-portfolio:hover img {
+  -webkit-transform: translate3d(0, -80px, 0);
+  transform: translate3d(0, -80px, 0);
+}
+
+figure.effect-portfolio:hover h2 {
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
+figure.effect-portfolio:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  /* Hide hover effects for mobile */
+  figure.effect-portfolio:hover img {
+    -webkit-transform: none;
+    transform: none;
+  }
+  figure.effect-portfolio:hover h2 {
+    -webkit-transform: none;
+    transform: none;
+  }
+  figure.effect-portfolio:hover p {
+    opacity: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+/* footer links */
+#contact {
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0px;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social-media li a {
+  color: #222;
+}
+
+#facebook, #instagram, #github, #email, #ffc {
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #home {
+    background-attachment: scroll;
+  }
+  
+}
